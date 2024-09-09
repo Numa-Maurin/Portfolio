@@ -12,11 +12,11 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.splitScreen}>
-          <a href="/cv" className={`${styles.split} ${styles.cvSection}`}>
-            <h1 className={styles.title}>aCCes My CV</h1>
+          <a href="https://drive.google.com/file/d/1ZLKzZk_1hFa6L7agmhopodXfm8IfygYY/view?usp=share_link" className={`${styles.split} ${styles.cvSection}`}>
+            <h1 className={styles.title}>ACCESS MY CV</h1>
           </a>
           <a href="/portfolio" className={`${styles.split} ${styles.portfolioSection}`}>
-            <h1 className={styles.title}>acces to My pORtFolIo</h1>
+            <h1 className={styles.title}>ACCESS MY PORTFOLIO</h1>
           </a>
         </div>
       </main>

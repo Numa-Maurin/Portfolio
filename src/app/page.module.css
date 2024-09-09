@@ -1,15 +1,16 @@
 .main {
-  height: 100vh;
+  height: 100vh; /* Full height of the viewport */
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #f0f0f0;
+  margin: 0; /* Ensure no margin/padding issues */
 }
 
 .splitScreen {
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100vh; /* Full height for the sections */
 }
 
 .split {
@@ -25,21 +26,26 @@
 }
 
 .cvSection {
-  background-color: #8c8e92df; /* Blue for the CV section */
+  background-color: #8c8e92df; /* Background color for CV section */
+  width: 50%; /* Ensure half width on larger screens */
 }
 
 .portfolioSection {
-  background-color: #6FA5F6; /* Orange/red for the Portfolio section */
+  background-color: #6FA5F6; /* Background color for Portfolio section */
+  width: 50%; /* Ensure half width on larger screens */
 }
 
 /* Zoom effect on hover */
 .split:hover {
   transform: scale(1.15);
 }
+
 .title {
   font-family: 'Major Mono Display', monospace;
   font-size: 3rem;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  -webkit-font-smoothing: antialiased; /* For Safari */
+  -moz-osx-font-smoothing: grayscale; /* For macOS */
 }
 
 /* Media Queries for responsiveness */
@@ -50,7 +56,8 @@
   }
 
   .split {
-    height: 50vh; /* Each section takes half the height */
+    width: 100%; /* Full width on small screens */
+    height: 50vh; /* Each section takes half the screen height */
   }
 
   .title {
